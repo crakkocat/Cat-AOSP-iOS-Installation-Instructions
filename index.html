@@ -1,73 +1,120 @@
+<section id="ios-installation">
+    <title>Cat-AOSP iOS Guide</title>
+    <h1>😼 Cat-AOSP iOS and iPadOS Installation guide</h1></h1>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CrakkoCat - Cat-AOSP - iOS Instructions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            color: #eee;
-            line-height: 1.6;
-            padding: 40px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h1, h2, h3 {
-            color: #ff9933;
-        }
-        code {
-            background-color: #222;
-            padding: 4px 8px;
-            border-radius: 4px;
-        }
-        pre {
-            background-color: #222;
-            padding: 15px;
-            border-radius: 6px;
-            overflow-x: auto;
-        }
-        a {
-            color: #4da6ff;
-        }
-        hr {
-            margin: 40px 0;
-            border: 1px solid #333;
-        }
-        .warning {
-            color: #ff4d4d;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
+    <p style="color:red; font-weight:bold;">
+        ⚠ The IPA must be sideloaded. It cannot be installed directly.
+    </p>
 
-<h1>🐱 Cat-AOSP iOS Installation Instructions</h1>
-<p><strong>A fork of Dolphin Emulator (build 2512)</strong></p>
+    <!-- Windows Section -->
+    <h3>🪟 Windows</h3>
 
-<hr>
+    <h4>Requirements</h4>
+    <ul>
+        <li>Windows 10 or later</li>
+        <li>
+            iTunes (Non-Microsoft Store version):<br>
+            <a href="https://support.apple.com/en-us/106372" target="_blank">
+                https://support.apple.com/en-us/106372
+            </a>
+        </li>
+        <li>
+            iCloud (Non-Microsoft Store version):<br>
+            <a href="http://updates-http.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41950005E/iCloudSetup.exe" target="_blank">
+                Download iCloud
+            </a>
+        </li>
+    </ul>
 
-<h2>📢 Release Notes</h2>
+    <p><strong>⚠ Do NOT use Microsoft Store versions of iTunes or iCloud.</strong></p>
 
-<h3>✨ Improvements</h3>
-<ul>
-    <li>Improved stability and reduced crashes</li>
-    <li>Performance optimizations for smoother gameplay</li>
-    <li>Minor UI polish and consistency fixes</li>
-    <li>Dependency updates</li>
-</ul>
+    <h4>Sideloading Tools</h4>
+    <ul>
+        <li>3uTools</li>
+        <li>AltServer</li>
+        <li><strong>Sideloadly (Recommended – supports auto-refresh)</strong></li>
+    </ul>
 
-<h3>🛠 Fixes</h3>
-<ul>
-    <li>Fixed save state instability</li>
-    <li>Improved audio synchronization</li>
-    <li>Patched shader cache inconsistencies</li>
-    <li>Controller input fixes</li>
-</ul>
+    <h4>Installation Steps</h4>
+    <ol>
+        <li>Install iTunes and iCloud (non-Store versions).</li>
+        <li>Install one of the sideloading tools listed above.</li>
+        <li>Connect your iOS device to your PC.</li>
+        <li>Open the sideloading tool and select the Cat-AOSP IPA.</li>
+        <li>Sign the app with your Apple ID.</li>
+        <li>Install the IPA to your device.</li>
+        <li>
+            On your device, go to:
+            <br>
+            <strong>Settings → General → VPN & Device Management</strong>
+        </li>
+        <li>Trust the developer profile.</li>
+        <li>Open Cat-AOSP.</li>
+    </ol>
 
-<hr>
+    <hr>
 
-<body>
-<html>
+    <!-- macOS Section -->
+    <h3>🍎 macOS</h3>
+
+    <h4>Requirements</h4>
+    <ul>
+        <li>macOS 10.14 or lower (iTunes required)</li>
+        <li>iCloud (pre-installed)</li>
+    </ul>
+
+    <h4>Sideloading Tools</h4>
+    <ul>
+        <li>3uTools</li>
+        <li>AltServer</li>
+        <li><strong>Sideloadly (Recommended)</strong></li>
+    </ul>
+
+    <h4>Installation Steps</h4>
+    <ol>
+        <li>Install your chosen sideloading tool.</li>
+        <li>Connect your iOS device.</li>
+        <li>Select the Cat-AOSP IPA inside the tool.</li>
+        <li>Sign the app with your Apple ID.</li>
+        <li>Install the IPA.</li>
+        <li>Trust the developer profile in System Settings.</li>
+        <li>Open Cat-AOSP.</li>
+    </ol>
+
+    <hr>
+
+    <!-- Linux Section -->
+    <h3>🐧 Linux</h3>
+
+    <h4>Requirements</h4>
+    <ul>
+        <li>Any Linux distribution</li>
+        <li>Legacy-iOS-Kit</li>
+    </ul>
+
+    <h4>Installation Steps</h4>
+
+    <pre><code>cd &lt;LegacyiOSKit directory&gt;
+bash restore.sh</code></pre>
+
+    <p>Or:</p>
+
+    <pre><code>./restore.sh</code></pre>
+
+    <ol>
+        <li>Enter your password if prompted.</li>
+        <li>Select <strong>App Management</strong> and press Enter.</li>
+        <li>Choose the Cat-AOSP IPA.</li>
+        <li>Sign the app.</li>
+        <li>Open Cat-AOSP on your device.</li>
+    </ol>
+
+    <hr>
+
+    <h3>⚠ Important Notes</h3>
+    <ul>
+        <li>Free Apple IDs require re-signing every 7 days.</li>
+        <li>Using a paid Apple Developer account removes the 7-day limit.</li>
+        <li>Sideloadly auto-refresh is recommended for convenience.</li>
+    </ul>
+</section>
